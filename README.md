@@ -16,7 +16,6 @@ Salma-Portfolio/
     ├── images/
     │   ├── profile.jpg        ← صورتك في أول الصفحة (Hero)
     │   ├── about.jpg          ← صورتك في قسم About Me
-    │   ├── branding.jpg       ← بوستر "Salma Ehsan – Instructor"
     │   ├── instructor.jpg     ← بوستر C++ Instructor
     │   ├── logo.png           ← لوجو Rattebhali (براندنج)
     │   ├── burger1.jpg        ← NEW BURGER
@@ -29,7 +28,7 @@ Salma-Portfolio/
     │   ├── cpp1.jpg           ← Learn to Code C++
     │   └── cpp2.jpg           ← C++ Course – Chess
     └── files/
-        └── salma-ehsan-cv.pdf ← السيرة الذاتية
+        └── Salma_Ehsan_CV.pdf ← السيرة الذاتية
 ```
 
 > كل الصور والأعمال والـ CV موجودة بالفعل داخل المجلد وجاهزة.
@@ -51,13 +50,9 @@ const PORTFOLIO_CONFIG = { ... };
 | المكان | المفتاح | الحالة دلوقتي |
 |---|---|---|
 | الاسم | `personal.name` | Salma Ehsan ✅ |
-| الإيميل | `personal.email` | `hello@salmaehsan.com` ⚠️ غيّريه |
-| الموبايل | `personal.phone` | `+20 XXX XXX XXXX` ⚠️ غيّريه |
-| المكان | `personal.location` | Cairo, Egypt ✅ |
-| اللينكات | `social[].url` | `#` ⚠️ حطي روابطك |
-| الأرقام | `about.stats` | 50 / 30 / 5 / 15 ⚠️ عدّليها لو عايزة |
-| آراء العملاء | `testimonials.items` | محتوى تجريبي ⚠️ غيّريه |
-| الخدمات | `services.items` | ✅ |
+| الإيميل | `personal.email` | `salmaehsan585@gmail.com` ✅ |
+| الموبايل | `personal.phone` | `01201462641` ✅ |
+| المكان | `personal.location` | Port Said, Egypt ✅ |
 | الأعمال | `portfolio.items` | ✅ 12 عمل بصورها (Branding / Social Media) |
 | المهارات | `skills.items` | ✅ |
 

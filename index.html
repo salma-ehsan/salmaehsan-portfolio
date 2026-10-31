@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Salma Ehsan - Graphic Designer & Brand Identity Specialist. Transforming ideas into stunning visual experiences.">
-  <meta name="keywords" content="Salma Ehsan, graphic designer, brand identity, visual storytelling, portfolio, Cairo Egypt">
+  <meta name="keywords" content="Salma Ehsan, graphic designer, brand identity, visual storytelling, portfolio, Port Said Egypt">
   <meta name="author" content="Salma Ehsan">
   <meta property="og:title" content="Salma Ehsan | Graphic Designer & Brand Identity Specialist">
   <meta property="og:description" content="Transforming ideas into stunning visual experiences. Explore my creative portfolio.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://salma-ehsan.github.io/salmaehsan-portfolio/">
-  <meta property="og:image" content="https://salma-ehsan.github.io/salmaehsan-portfolio/assets/images/branding.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Salma Ehsan | Graphic Designer & Brand Identity Specialist">
   <meta name="twitter:description" content="Transforming ideas into stunning visual experiences.">
@@ -63,11 +62,13 @@
       transition: opacity 0.6s ease, visibility 0.6s ease;
     }
     .loader-logo {
-      width: 56px; height: 56px; background: linear-gradient(135deg, var(--bg-primary), #3a225a);
+      width: 80px; height: 80px; background: linear-gradient(135deg, var(--bg-primary), #3a225a);
       border: 1px solid var(--glass-border); border-radius: 50%; display: flex; align-items: center;
       justify-content: center; font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem;
       color: var(--accent); box-shadow: 0 0 30px var(--accent-glow); animation: pulse-glow 2.5s infinite ease-in-out;
+      overflow: hidden;
     }
+    .loader-logo img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
     .loader-text {
       margin-top: 1.5rem; font-family: var(--font-heading); font-weight: 600; font-size: 1.1rem;
       letter-spacing: 4px; text-transform: uppercase; color: var(--text-secondary);
@@ -85,7 +86,8 @@
     nav.scrolled { padding: 0.8rem 0; background: var(--glass-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--glass-border); box-shadow: var(--glass-shadow); }
     .nav-container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; }
     .logo { font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; z-index: 1001; }
-    .logo-mark { width: 40px; height: 40px; background: linear-gradient(135deg, var(--accent), #d8b4f8); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: var(--bg-primary); box-shadow: 0 0 25px var(--accent-glow); }
+    .logo-mark { width: 44px; height: 44px; background: linear-gradient(135deg, var(--accent), #d8b4f8); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: var(--bg-primary); box-shadow: 0 0 25px var(--accent-glow); overflow: hidden; padding: 0; }
+    .logo-mark img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a { font-family: var(--font-heading); font-size: 0.9rem; font-weight: 600; color: var(--text-secondary); transition: color var(--transition-fast); }
     .nav-links a:hover, .nav-links a.active { color: var(--accent); }
@@ -123,9 +125,6 @@
     .profile-circle { width: clamp(200px, 40vw, 320px); height: clamp(200px, 40vw, 320px); border-radius: 50%; background: linear-gradient(135deg, var(--accent-soft), rgba(58, 34, 90, 0.6)); border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 800; font-size: 3rem; color: var(--accent); box-shadow: 0 0 40px var(--accent-glow); position: relative; overflow: hidden; }
     .profile-circle img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; border-radius: 50%; }
     .profile-initials { position: relative; z-index: 2; }
-    .social-links { display: flex; gap: 1rem; justify-content: flex-start; margin-top: 2.5rem; animation: fadeInUp 1s ease 1.4s both; }
-    .social-link { width: 48px; height: 48px; border-radius: 12px; background: var(--glass-bg); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); font-size: 1.2rem; transition: all var(--transition-fast); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-    .social-link:hover { background: var(--accent); color: var(--bg-primary); transform: translateY(-4px); box-shadow: 0 8px 25px var(--accent-glow); }
     section { padding: 5rem 0; position: relative; }
     .section-header { text-align: center; margin-bottom: 3.5rem; animation: fadeInUp 0.8s ease both; }
     .section-header .section-tag { font-family: var(--font-heading); font-size: 0.85rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 0.75rem; }
@@ -138,23 +137,10 @@
     .about-grid { display: grid; grid-template-columns: 1fr 420px; gap: 3rem; align-items: start; }
     .about-content h3 { font-size: 1.75rem; color: var(--text-primary); margin-bottom: 1.25rem; }
     .about-content p { color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1.05rem; }
-    .about-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
-    .stat-card { padding: 1.5rem; text-align: center; }
-    .stat-number { font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--accent); display: block; line-height: 1; }
-    .stat-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-top: 0.5rem; display: block; }
     .about-visual { position: relative; height: 480px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow); display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, rgba(243, 224, 254, 0.06), rgba(29, 16, 43, 0.9)); }
     .about-visual img { width: 100%; height: 100%; object-fit: contain; }
     .download-cv { margin-top: 2rem; display: inline-flex; align-items: center; gap: 0.75rem; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary); padding: 1rem 2rem; border-radius: var(--radius); font-family: var(--font-heading); font-weight: 600; font-size: 0.95rem; backdrop-filter: blur(8px); transition: all var(--transition-fast); }
     .download-cv:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 25px var(--accent-glow); }
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-    .service-card { padding: 2.5rem 2rem; position: relative; overflow: hidden; }
-    .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(243, 224, 254, 0.05), transparent); opacity: 0; transition: opacity var(--transition); }
-    .service-card:hover::before { opacity: 1; }
-    .service-icon { font-size: 2.5rem; margin-bottom: 1.25rem; display: block; }
-    .service-card h3 { font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.75rem; }
-    .service-card p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem; }
-    .service-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .service-tag { font-size: 0.7rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 20px; background: rgba(243, 224, 254, 0.1); color: var(--accent); border: 1px solid rgba(243, 224, 254, 0.2); }
     .portfolio { background: var(--bg-secondary); }
     .portfolio-filters { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
     .filter-btn { padding: 0.7rem 1.5rem; border-radius: 50px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-secondary); font-family: var(--font-heading); font-weight: 600; font-size: 0.85rem; backdrop-filter: blur(8px); cursor: pointer; transition: all var(--transition-fast); }
@@ -172,14 +158,6 @@
     .view-details { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); font-family: var(--font-heading); font-weight: 600; font-size: 0.85rem; transition: gap 0.3s ease; }
     .view-details:hover { gap: 1rem; }
     .load-more-wrap { text-align: center; margin-top: 3rem; }
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
-    .skill-card { padding: 2rem; text-align: center; }
-    .skill-header { display: flex; justify-content: space-between; margin-bottom: 0.75rem; }
-    .skill-name { font-family: var(--font-heading); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); }
-    .skill-percent { font-weight: 700; color: var(--accent); }
-    .skill-bar-wrap { width: 100%; height: 8px; background: rgba(243, 224, 254, 0.1); border-radius: 10px; overflow: hidden; position: relative; }
-    .skill-bar { height: 100%; background: linear-gradient(90deg, var(--accent), #d8b4f8); border-radius: 10px; width: 0; position: relative; box-shadow: 0 0 15px var(--accent-glow); transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
-    .skill-bar::after { content: attr(data-percent); position: absolute; top: -22px; right: 0; font-size: 0.75rem; font-family: var(--font-heading); font-weight: 600; color: var(--text-secondary); }
     .process { background: var(--bg-secondary); }
     .process-timeline { position: relative; max-width: 900px; margin: 0 auto; padding: 2rem 0; }
     .process-timeline::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: linear-gradient(to bottom, transparent, var(--accent), transparent); transform: translateX(-50%); }
@@ -192,46 +170,15 @@
     .step-content h4 { font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem; }
     .step-content p { color: var(--text-secondary); font-size: 0.95rem; }
     .step-dot { width: 14px; height: 14px; background: var(--accent); border-radius: 50%; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 15px var(--accent-glow); z-index: 2; }
-    .testimonials { position: relative; }
-    .testimonial-slider { position: relative; max-width: 800px; margin: 0 auto; overflow: hidden; }
-    .testimonial-track { display: flex; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
-    .testimonial-card { min-width: 100%; padding: 0 1rem; display: flex; flex-direction: column; align-items: center; text-align: center; opacity: 0.4; transform: scale(0.9); transition: all 0.6s ease; }
-    .testimonial-card.active { opacity: 1; transform: scale(1); }
-    .testimonial-glass { width: 100%; max-width: 560px; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 2.5rem 2rem; border-radius: var(--radius-lg); backdrop-filter: blur(12px); box-shadow: var(--glass-shadow); margin: 0 auto; }
-    .quote-icon { font-size: 3rem; color: var(--accent); margin-bottom: 1rem; display: block; opacity: 0.6; }
-    .testimonial-card p { color: var(--text-secondary); font-size: 1.1rem; font-style: italic; margin-bottom: 1.75rem; line-height: 1.6; }
-    .client-info { display: flex; align-items: center; gap: 1rem; }
-    .client-avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-soft), rgba(58, 34, 90, 0.4)); border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; color: var(--accent); }
-    .client-details h5 { font-size: 1rem; color: var(--text-primary); }
-    .client-details span { font-size: 0.8rem; color: var(--text-muted); display: block; }
-    .stars { color: var(--accent); font-size: 1.1rem; margin-top: 0.5rem; letter-spacing: 2px; }
-    .testimonial-nav { display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-top: 2.5rem; }
-    .nav-arrow { width: 48px; height: 48px; border-radius: 50%; background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--text-primary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; transition: all var(--transition-fast); backdrop-filter: blur(8px); }
-    .nav-arrow:hover { background: var(--accent); color: var(--bg-primary); }
-    .nav-dots { display: flex; gap: 0.5rem; }
-    .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--text-muted); cursor: pointer; transition: all 0.3s ease; }
-    .dot.active { background: var(--accent); width: 24px; border-radius: 5px; }
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
     .contact-info h3 { font-size: 1.75rem; color: var(--text-primary); margin-bottom: 1.5rem; }
     .contact-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.75rem; color: var(--text-secondary); }
     .contact-item .icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(243, 224, 254, 0.1); border: 1px solid rgba(243, 224, 254, 0.2); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
     .contact-item h4 { font-size: 1rem; color: var(--text-primary); margin-bottom: 0.25rem; }
     .contact-item p { font-size: 0.9rem; }
-    .social-list { display: flex; gap: 1rem; margin-top: 1rem; }
-    .social-list .social-link { width: 44px; height: 44px; }
-    .contact-form-wrap { background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 2.5rem; border-radius: var(--radius-lg); backdrop-filter: blur(16px); box-shadow: var(--glass-shadow); }
-    .contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
-    .form-group { position: relative; }
-    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.5rem; letter-spacing: 0.5px; }
-    .form-group input, .form-group select, .form-group textarea { width: 100%; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--glass-border); color: var(--text-primary); padding: 0.9rem 1rem; border-radius: var(--radius); font-family: var(--font-body); font-size: 0.95rem; transition: all var(--transition-fast); backdrop-filter: blur(4px); }
-    .form-group select { appearance: none; cursor: pointer; }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 20px var(--accent-glow); }
-    .form-group textarea { resize: vertical; min-height: 140px; }
-    .form-error { color: #ff6b6b; font-size: 0.8rem; margin-top: 0.4rem; display: none; }
-    .form-success { color: var(--accent); font-size: 0.85rem; margin-top: 0.4rem; font-weight: 600; display: none; }
     footer { border-top: 1px solid var(--glass-border); position: relative; padding: 4rem 0 2rem; overflow: hidden; }
     .footer-gradient { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.6; }
-    .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-content { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-bottom: 3rem; }
     .footer-logo { font-family: var(--font-heading); font-weight: 800; font-size: 1.6rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; }
     .footer-desc { color: var(--text-secondary); font-size: 0.95rem; max-width: 300px; line-height: 1.6; }
     .footer-heading { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; color: var(--text-primary); margin-bottom: 1.25rem; letter-spacing: 1px; }
@@ -239,7 +186,6 @@
     .footer-links a { color: var(--text-secondary); font-size: 0.9rem; transition: color var(--transition-fast); }
     .footer-links a:hover { color: var(--accent); padding-left: 5px; }
     .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid var(--glass-border); font-size: 0.85rem; color: var(--text-muted); }
-    .footer-social { display: flex; gap: 1rem; }
     .back-to-top { position: fixed; right: 2rem; bottom: 2rem; width: 50px; height: 50px; background: var(--accent); color: var(--bg-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; z-index: 900; opacity: 0; visibility: hidden; transition: all var(--transition-fast); box-shadow: 0 0 25px var(--accent-glow); }
     .back-to-top.show { opacity: 1; visibility: visible; }
     .back-to-top:hover { transform: translateY(-4px); box-shadow: 0 10px 30px var(--accent-glow); }
@@ -266,7 +212,6 @@
       .hero-content { text-align: center; }
       .hero-tagline { margin: 0 auto 2.5rem; }
       .hero-cta { justify-content: center; }
-      .social-links { justify-content: center; }
       .hero-visual { order: -1; }
       .profile-circle { width: 220px; height: 220px; }
     }
@@ -276,10 +221,7 @@
       .nav-btn { display: none; }
       .hero-content { padding: 0 1rem; }
       .section-header h2 { font-size: 2.2rem; }
-      .about-stats { grid-template-columns: 1fr; }
-      .services-grid { grid-template-columns: 1fr; }
       .portfolio-grid { grid-template-columns: 1fr; }
-      .skills-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       .footer-content { grid-template-columns: 1fr; gap: 2rem; }
       .footer-desc { max-width: 100%; }
@@ -294,7 +236,7 @@
 <body class="cursor-ready">
 
   <div id="preloader">
-    <div class="loader-logo">SE</div>
+    <div class="loader-logo"><img src="assets/images/profile.jpg" alt="Salma Ehsan"></div>
     <div class="loader-text">Salma Ehsan</div>
   </div>
 
@@ -333,7 +275,6 @@
           <a href="#portfolio" class="btn btn-primary" id="ctaPortfolio">View My Work</a>
           <a href="#contact" class="btn btn-secondary" id="ctaContact">Get In Touch</a>
         </div>
-        <div class="social-links" id="heroSocials"></div>
       </div>
       <div class="hero-visual">
         <div class="profile-circle" id="profileCircle">
@@ -353,27 +294,14 @@
       </div>
       <div class="about-grid">
         <div class="about-content reveal delay-2">
-          <h3 id="aboutHeading">I'm Salma Ehsan, a Graphic Designer <br>based in Cairo, Egypt.</h3>
+          <h3 id="aboutHeading">I'm Salma Ehsan, a Graphic Designer <br>based in Port Said, Egypt.</h3>
           <p id="aboutBio">I'm a passionate graphic designer with X years of experience helping brands tell their stories through thoughtful visual design.</p>
-          <div class="about-stats" id="aboutStats"></div>
-          <a href="#" class="download-cv" id="downloadCv"><span>↓</span> <span id="downloadCvText">Download CV</span></a>
+          <a href="#" class="download-cv" id="downloadCv" download="Salma-Ehsan-CV.pdf"><span>↓</span> <span id="downloadCvText">Download CV</span></a>
         </div>
         <div class="about-visual reveal delay-3">
           <img id="aboutImg" src="" alt="Salma Ehsan">
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header reveal delay-1">
-        <span class="section-tag" id="servicesTag">What I Do</span>
-        <h2 id="servicesTitle">My Services</h2>
-        <p id="servicesSubtitle">Comprehensive design solutions tailored to your brand's unique needs.</p>
-        <div class="grid-line"></div>
-      </div>
-      <div class="services-grid" id="servicesGrid"></div>
     </div>
   </section>
 
@@ -387,18 +315,6 @@
       </div>
       <div class="portfolio-filters" id="portfolioFilters"></div>
       <div class="portfolio-grid" id="portfolioGrid"></div>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="section-header reveal delay-1">
-        <span class="section-tag" id="skillsTag">Tools & Skills</span>
-        <h2 id="skillsTitle">Technical Skills</h2>
-        <p id="skillsSubtitle">Tools I use to bring ideas to life.</p>
-        <div class="grid-line"></div>
-      </div>
-      <div class="skills-grid" id="skillsGrid"></div>
     </div>
   </section>
 
@@ -417,25 +333,6 @@
     </div>
   </section>
 
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-header reveal delay-1">
-        <span class="section-tag" id="testimonialsTag">Client Love</span>
-        <h2 id="testimonialsTitle">Testimonials</h2>
-        <p id="testimonialsSubtitle">What my clients say about working together.</p>
-        <div class="grid-line"></div>
-      </div>
-      <div class="testimonial-slider">
-        <div class="testimonial-track" id="testimonialTrack"></div>
-      </div>
-      <div class="testimonial-nav">
-        <button class="nav-arrow" id="prevTestimonial">&#10094;</button>
-        <div class="nav-dots" id="testimonialDots"></div>
-        <button class="nav-arrow" id="nextTestimonial">&#10095;</button>
-      </div>
-    </div>
-  </section>
-
   <section id="contact">
     <div class="container">
       <div class="section-header reveal delay-1">
@@ -450,17 +347,6 @@
           <div class="contact-item" id="contactEmail"></div>
           <div class="contact-item" id="contactPhone"></div>
           <div class="contact-item" id="contactLocation"></div>
-          <div class="social-list" id="contactSocials"></div>
-        </div>
-        <div class="contact-form-wrap reveal delay-3">
-          <form id="contactForm" novalidate>
-            <div class="form-group" id="formNameGroup"></div>
-            <div class="form-group" id="formEmailGroup"></div>
-            <div class="form-group" id="formSubjectGroup"></div>
-            <div class="form-group" id="formMessageGroup"></div>
-            <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
-            <div class="form-success" id="formSuccess">Thank you! Your message has been sent successfully.</div>
-          </form>
         </div>
       </div>
     </div>
@@ -478,10 +364,6 @@
           <div class="footer-heading" id="footerQuickLinks">Quick Links</div>
           <ul class="footer-links" id="footerLinks"></ul>
         </div>
-        <div class="footer-links-wrap">
-          <div class="footer-heading" id="footerFollow">Follow</div>
-          <div class="footer-social" id="footerSocials"></div>
-        </div>
       </div>
       <div class="footer-bottom">
         <span id="footerCopyright">© 2025 Salma Ehsan. All Rights Reserved.</span>
@@ -497,21 +379,16 @@
         title: "Graphic Designer & Brand Identity Specialist",
         tagline: "Transforming ideas into stunning visual experiences",
         bio: "I'm a passionate graphic designer helping brands tell their stories through thoughtful visual design. From brand identity to digital experiences, I craft designs that are not only beautiful but strategically effective. My approach combines creativity with strategy, ensuring every pixel serves a purpose and every design leaves a lasting impression.",
-        email: "hello@salmaehsan.com",
-        phone: "+20 XXX XXX XXXX",
-        location: "Cairo, Egypt",
-        cvLink: "assets/files/salma-ehsan-cv.pdf",
+        email: "salmaehsan585@gmail.com",
+        phone: "01201462641",
+        location: "Port Said, Egypt",
+        cvLink: "assets/files/Salma_Ehsan_CV.pdf",
         initials: "SE",
+        avatar: "assets/images/logo-avatar.jpg",
         profileImage: "assets/images/profile.jpg",
         aboutImage: "assets/images/about.jpg",
         logoImage: "assets/images/logo.png"
       },
-      social: [
-        { name: "Behance", char: "B", url: "#" },
-        { name: "Dribbble", char: "D", url: "#" },
-        { name: "Instagram", char: "I", url: "#" },
-        { name: "LinkedIn", char: "L", url: "#" }
-      ],
       hero: {
         subtitle: "Creative Designer",
         typingWords: ["Graphic Designer", "Brand Identity Specialist", "Visual Storyteller", "Creative Director"],
@@ -522,26 +399,8 @@
       about: {
         tag: "About Me", title: "Behind The Design",
         subtitle: "Passionate about creating meaningful visual identities that connect brands with their audiences.",
-        heading: "I'm Salma Ehsan, a Graphic Designer <br>based in Cairo, Egypt.",
-        stats: [
-          { number: "50", label: "Projects Completed" },
-          { number: "30", label: "Happy Clients" },
-          { number: "5", label: "Years Experience" },
-          { number: "15", label: "Awards" }
-        ],
+        heading: "I'm Salma Ehsan, a Graphic Designer <br>based in Port Said, Egypt.",
         downloadCv: "Download CV"
-      },
-      services: {
-        tag: "What I Do", title: "My Services",
-        subtitle: "Comprehensive design solutions tailored to your brand's unique needs.",
-        items: [
-          { icon: "🎨", title: "Brand Identity Design", desc: "Logo design, business cards, brand guidelines, and complete visual identity systems.", tags: ["Logo", "Branding", "Identity"] },
-          { icon: "📱", title: "Social Media Design", desc: "Engaging posts, stories, ads, and campaign visuals that grow your audience.", tags: ["Social", "Campaigns", "Ads"] },
-          { icon: "🖨️", title: "Print Design", desc: "Brochures, flyers, posters, and packaging design that makes an impact offline.", tags: ["Print", "Packaging", "Editorial"] },
-          { icon: "💻", title: "UI/UX Design", desc: "Web and app interface design focused on user experience and seamless interaction.", tags: ["UI", "UX", "Web"] },
-          { icon: "🎬", title: "Motion Graphics", desc: "Animated content and videos that bring your brand story to life.", tags: ["Animation", "Video", "Motion"] },
-          { icon: "✨", title: "Illustration", desc: "Custom digital illustrations tailored to your brand's personality and style.", tags: ["Illustration", "Digital Art", "Custom"] }
-        ]
       },
       portfolio: {
         tag: "Selected Works", title: "My Creative Work",
@@ -552,28 +411,13 @@
           { title: "Rattebhali – Brand Identity", category: "Branding", image: "assets/images/logo.png", gradient: "linear-gradient(135deg,rgba(243,224,254,0.12),rgba(37,24,54,0.85))" },
           { title: "Learn to Code C++", category: "Branding", image: "assets/images/cpp1.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.17),rgba(37,24,54,0.78))" },
           { title: "C++ Course – Chess", category: "Branding", image: "assets/images/cpp2.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.13),rgba(37,24,54,0.84))" },
-          { title: "Python for High School", category: "Branding", image: "assets/images/python2.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.1),rgba(37,24,54,0.9))" },
-          { title: "Python Level 1 – Neon", category: "Branding", image: "assets/images/python3.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.16),rgba(37,24,54,0.82))" },
           { title: "Coming Soon – Rattebhali", category: "Branding", image: "assets/images/comingsoon.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.14),rgba(37,24,54,0.86))" },
-          { title: "Salma Ehsan – Instructor Brand", category: "Branding", image: "assets/images/branding.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.19),rgba(37,24,54,0.74))" },
-          { title: "New Burger Poster", category: "Social Media", image: "assets/images/burger1.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.15),rgba(37,24,54,0.8))" },
-          { title: "Hot & Fresh Burger Ad", category: "Social Media", image: "assets/images/burger2.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.12),rgba(37,24,54,0.85))" },
           { title: "Python Level 1 Course", category: "Social Media", image: "assets/images/python1.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.18),rgba(37,24,54,0.75))" },
-          { title: "Scratch Course for Kids", category: "Social Media", image: "assets/images/scratch.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.11),rgba(37,24,54,0.88))" }
-        ]
-      },
-      skills: {
-        tag: "Tools & Skills", title: "Technical Skills",
-        subtitle: "Tools I use to bring ideas to life.",
-        items: [
-          { name: "Adobe Photoshop", percent: 95 },
-          { name: "Adobe Illustrator", percent: 90 },
-          { name: "Adobe InDesign", percent: 85 },
-          { name: "Adobe After Effects", percent: 75 },
-          { name: "Figma", percent: 88 },
-          { name: "Adobe XD", percent: 80 },
-          { name: "Procreate", percent: 70 },
-          { name: "Canva", percent: 95 }
+          { title: "Python for High School", category: "Social Media", image: "assets/images/python2.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.1),rgba(37,24,54,0.9))" },
+          { title: "Python Level 1 – Neon", category: "Social Media", image: "assets/images/python3.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.16),rgba(37,24,54,0.82))" },
+          { title: "Scratch Course for Kids", category: "Social Media", image: "assets/images/scratch.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.11),rgba(37,24,54,0.88))" },
+          { title: "New Burger Poster", category: "Social Media", image: "assets/images/burger1.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.15),rgba(37,24,54,0.8))" },
+          { title: "Hot & Fresh Burger Ad", category: "Social Media", image: "assets/images/burger2.jpg", gradient: "linear-gradient(135deg,rgba(243,224,254,0.12),rgba(37,24,54,0.85))" }
         ]
       },
       process: {
@@ -588,45 +432,29 @@
           { step: "06", title: "Deliver", desc: "Final files and brand guidelines delivery." }
         ]
       },
-      testimonials: {
-        tag: "Client Love", title: "Testimonials",
-        subtitle: "What my clients say about working together.",
-        items: [
-          { quote: "Salma transformed our brand identity completely. Her attention to detail and creative vision exceeded all our expectations.", client: "Ahmed Hassan", role: "CEO, TechStart", avatar: "AH", stars: 5 },
-          { quote: "Exceptional work on our social media campaign. The designs were modern, engaging, and perfectly on brand.", client: "Sarah Mahmoud", role: "Marketing Director", avatar: "SM", stars: 5 },
-          { quote: "Professional, timely, and incredibly talented. Salma delivered a stunning UI design for our mobile app.", client: "Mohamed Khaled", role: "Product Owner", avatar: "MK", stars: 4 },
-          { quote: "The print materials Salma designed for our event received so many compliments. Truly a gifted designer.", client: "Layla Ezzat", role: "Event Coordinator", avatar: "LE", stars: 5 }
-        ]
-      },
       contact: {
         tag: "Get In Touch", title: "Let's Create Something Amazing",
         subtitle: "Have a project in mind? I'd love to hear about it.",
         infoTitle: "Contact Information",
         emailLabel: "Email", phoneLabel: "Phone", locationLabel: "Location",
-        formNameLabel: "Full Name", formNamePlaceholder: "Enter your name",
-        formEmailLabel: "Email Address", formEmailPlaceholder: "you@example.com",
-        formSubjectLabel: "Subject", formMessageLabel: "Message",
-        formMessagePlaceholder: "Tell me about your project...",
-        formBtn: "Send Message", formSuccess: "Thank you! Your message has been sent successfully.",
-        subjectOptions: ["Branding", "Social Media", "Print", "UI/UX", "Other"]
       },
       footer: {
         desc: "Creating meaningful visual identities that connect brands with their audiences.",
         copyright: "© {year} Salma Ehsan. All Rights Reserved.",
-        quickLinks: ["Home", "About", "Services", "Portfolio", "Contact"]
+        quickLinks: ["Home", "About", "Portfolio", "Contact"]
       }
     };
 
     const C = PORTFOLIO_CONFIG;
     const $ = (id) => document.getElementById(id);
-    const starsHtml = (n) => "★".repeat(n) + "☆".repeat(5 - n);
 
-    document.getElementById("logoMark").textContent = C.personal.initials;
+    const logoMarkHtml = `<img src="${C.personal.avatar}" alt="${C.personal.name}">`;
+    document.getElementById("logoMark").innerHTML = logoMarkHtml;
     document.getElementById("logoText").textContent = C.personal.name;
-    document.getElementById("footerLogoMark").textContent = C.personal.initials;
+    document.getElementById("footerLogoMark").innerHTML = logoMarkHtml;
     document.getElementById("footerLogoText").textContent = C.personal.name;
 
-    const navLinks = ["Home", "About", "Services", "Portfolio", "Skills", "Testimonials", "Contact"];
+    const navLinks = ["Home", "About", "Portfolio", "Contact"];
     const navList = $("nav-links");
     navLinks.forEach((text, i) => {
       const li = document.createElement("li");
@@ -653,42 +481,17 @@
     $("ctaContact").textContent = C.hero.cta2;
     $("profileInitials").textContent = C.personal.initials;
 
-    const heroSocials = $("heroSocials");
-    C.social.forEach(s => {
-      const a = document.createElement("a");
-      a.href = s.url; a.className = "social-link"; a.title = s.name; a.ariaLabel = s.name; a.textContent = s.char;
-      heroSocials.appendChild(a);
-    });
 
     $("aboutTag").textContent = C.about.tag;
     $("aboutTitle").textContent = C.about.title;
     $("aboutSubtitle").textContent = C.about.subtitle;
     $("aboutHeading").innerHTML = C.about.heading;
     $("aboutBio").innerHTML = C.personal.bio;
-    const statsContainer = $("aboutStats");
-    C.about.stats.forEach(s => {
-      const card = document.createElement("div");
-      card.className = "stat-card reveal delay-3";
-      card.innerHTML = `<span class="stat-number count" data-target="${s.number}">0</span><span class="stat-label">${s.label}</span>`;
-      statsContainer.appendChild(card);
-    });
     $("downloadCv").href = C.personal.cvLink;
     $("downloadCvText").textContent = C.about.downloadCv;
 
     $("aboutImg").src = C.personal.aboutImage;
     $("profileCircle").innerHTML = `<img src="${C.personal.profileImage}" alt="${C.personal.name}">`;
-
-    $("servicesTag").textContent = C.services.tag;
-    $("servicesTitle").textContent = C.services.title;
-    $("servicesSubtitle").textContent = C.services.subtitle;
-    const servicesGrid = $("servicesGrid");
-    C.services.items.forEach((s, i) => {
-      const card = document.createElement("div");
-      card.className = `glass-card service-card reveal delay-2`;
-      card.style.animationDelay = `${0.2 + i * 0.1}s`;
-      card.innerHTML = `<span class="service-icon">${s.icon}</span><h3>${s.title}</h3><p>${s.desc}</p><div class="service-tags">${s.tags.map(t => `<span class="service-tag">${t}</span>`).join("")}</div>`;
-      servicesGrid.appendChild(card);
-    });
 
     $("portfolioTag").textContent = C.portfolio.tag;
     $("portfolioTitle").textContent = C.portfolio.title;
@@ -718,18 +521,6 @@
       portfolioGrid.appendChild(el);
     });
 
-    $("skillsTag").textContent = C.skills.tag;
-    $("skillsTitle").textContent = C.skills.title;
-    $("skillsSubtitle").textContent = C.skills.subtitle;
-    const skillsGrid = $("skillsGrid");
-    C.skills.items.forEach((s, i) => {
-      const card = document.createElement("div");
-      card.className = `skill-card reveal delay-2`;
-      card.style.animationDelay = `${0.2 + i * 0.08}s`;
-      card.innerHTML = `<div class="skill-header"><span class="skill-name">${s.name}</span><span class="skill-percent">${s.percent}%</span></div><div class="skill-bar-wrap"><div class="skill-bar" data-percent="${s.percent}%"></div></div>`;
-      skillsGrid.appendChild(card);
-    });
-
     $("processTag").textContent = C.process.tag;
     $("processTitle").textContent = C.process.title;
     $("processSubtitle").textContent = C.process.subtitle;
@@ -741,21 +532,6 @@
       processSteps.appendChild(step);
     });
 
-    $("testimonialsTag").textContent = C.testimonials.tag;
-    $("testimonialsTitle").textContent = C.testimonials.title;
-    $("testimonialsSubtitle").textContent = C.testimonials.subtitle;
-    const track = $("testimonialTrack");
-    const dotsContainer = $("testimonialDots");
-    C.testimonials.items.forEach((t, i) => {
-      const card = document.createElement("div");
-      card.className = "testimonial-card" + (i === 0 ? " active" : "");
-      card.innerHTML = `<div class="testimonial-glass"><span class="quote-icon">❝</span><p>${t.quote}</p><div class="client-info"><div class="client-avatar">${t.avatar}</div><div class="client-details"><h5>${t.client}</h5><span>${t.role}</span></div></div><div class="stars">${starsHtml(t.stars)}</div></div>`;
-      track.appendChild(card);
-      const dot = document.createElement("div");
-      dot.className = "dot" + (i === 0 ? " active" : ""); dot.dataset.index = i;
-      dotsContainer.appendChild(dot);
-    });
-
     $("contactTag").textContent = C.contact.tag;
     $("contactTitle").textContent = C.contact.title;
     $("contactSubtitle").textContent = C.contact.subtitle;
@@ -763,23 +539,6 @@
     $("contactEmail").innerHTML = `<div class="icon">✉️</div><div><h4>${C.contact.emailLabel}</h4><p>${C.personal.email}</p></div>`;
     $("contactPhone").innerHTML = `<div class="icon">📞</div><div><h4>${C.contact.phoneLabel}</h4><p>${C.personal.phone}</p></div>`;
     $("contactLocation").innerHTML = `<div class="icon">📍</div><div><h4>${C.contact.locationLabel}</h4><p>${C.personal.location}</p></div>`;
-    const contactSocials = $("contactSocials");
-    C.social.forEach(s => {
-      const a = document.createElement("a");
-      a.href = s.url; a.className = "social-link"; a.title = s.name; a.ariaLabel = s.name; a.textContent = s.char;
-      contactSocials.appendChild(a);
-    });
-    const fgName = $("formNameGroup");
-    fgName.innerHTML = `<label for="name">${C.contact.formNameLabel}</label><input type="text" id="name" name="name" placeholder="${C.contact.formNamePlaceholder}" required><div class="form-error" id="name-error">Please enter your name</div>`;
-    const fgEmail = $("formEmailGroup");
-    fgEmail.innerHTML = `<label for="email">${C.contact.formEmailLabel}</label><input type="email" id="email" name="email" placeholder="${C.contact.formEmailPlaceholder}" required><div class="form-error" id="email-error">Please enter a valid email</div>`;
-    const fgSubject = $("formSubjectGroup");
-    fgSubject.innerHTML = `<label for="subject">${C.contact.formSubjectLabel}</label><select id="subject" name="subject">${C.contact.subjectOptions.map(o => `<option value="${o.toLowerCase()}">${o}</option>`).join("")}</select>`;
-    const fgMessage = $("formMessageGroup");
-    fgMessage.innerHTML = `<label for="message">${C.contact.formMessageLabel}</label><textarea id="message" name="message" placeholder="${C.contact.formMessagePlaceholder}" required></textarea><div class="form-error" id="message-error">Please enter your message</div>`;
-    $("submitBtn").textContent = C.contact.formBtn;
-    $("formSuccess").textContent = C.contact.formSuccess;
-
     $("footerDesc").textContent = C.footer.desc;
     $("footerCopyright").textContent = C.footer.copyright.replace("{year}", new Date().getFullYear());
     const footerLinks = $("footerLinks");
@@ -788,12 +547,6 @@
       const a = document.createElement("a");
       a.href = "#" + l.toLowerCase(); a.textContent = l;
       li.appendChild(a); footerLinks.appendChild(li);
-    });
-    const footerSocials = $("footerSocials");
-    C.social.forEach(s => {
-      const a = document.createElement("a");
-      a.href = s.url; a.className = "social-link"; a.title = s.name; a.ariaLabel = s.name; a.textContent = s.char;
-      footerSocials.appendChild(a);
     });
 
     window.addEventListener("load", () => {
@@ -809,7 +562,7 @@
     document.addEventListener("mousemove", e => { cursor.style.left = e.clientX + "px"; cursor.style.top = e.clientY + "px"; });
     document.addEventListener("mousedown", () => cursor.style.transform = "translate(-50%, -50%) scale(0.7)");
     document.addEventListener("mouseup", () => cursor.style.transform = "translate(-50%, -50%) scale(1)");
-    document.querySelectorAll("a, button, .portfolio-item, .service-card, .glass-card, .social-link, .nav-link, .filter-btn").forEach(el => {
+    document.querySelectorAll("a, button, .portfolio-item, .glass-card, .nav-link, .filter-btn").forEach(el => {
       el.addEventListener("mouseenter", () => cursor.classList.add("hovered"));
       el.addEventListener("mouseleave", () => cursor.classList.remove("hovered"));
     });
@@ -838,7 +591,6 @@
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add("active");
-            if (entry.target.classList.contains("skill-card")) animateSkillBar(entry.target);
             if (entry.target.classList.contains("process-step")) entry.target.classList.add("visible");
             obs.unobserve(entry.target);
           }
@@ -846,32 +598,7 @@
       }, { threshold: 0.1, rootMargin: "0px 0px -80px 0px" });
       document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
       document.querySelectorAll(".process-step").forEach(el => obs.observe(el));
-      document.querySelectorAll(".skill-card").forEach(el => obs.observe(el));
     }
-    function animateSkillBar(card) {
-      const bar = card.querySelector(".skill-bar");
-      if (bar && !bar.classList.contains("animated")) {
-        setTimeout(() => { bar.style.width = bar.getAttribute("data-percent"); bar.classList.add("animated"); }, 200);
-      }
-    }
-    function countUpStats() {
-      const stats = document.querySelectorAll(".stat-number");
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const target = +entry.target.getAttribute("data-target"); let cur = 0;
-            const inc = target / (2000 / 16); const timer = setInterval(() => {
-              cur += inc;
-              if (cur >= target) { entry.target.textContent = target + "+"; clearInterval(timer); }
-              else entry.target.textContent = Math.floor(cur) + "+";
-            }, 16);
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.4 });
-      stats.forEach(s => obs.observe(s));
-    }
-    countUpStats();
     function typingEffect() {
       const el = $("typing"); const words = C.hero.typingWords;
       let wi = 0, ci = 0, del = false;
@@ -900,52 +627,6 @@
           } else { item.style.opacity = "0"; item.style.transform = "scale(0.8)"; setTimeout(() => { item.style.display = "none"; }, 300); }
         });
       });
-    });
-    const cards = document.querySelectorAll(".testimonial-card");
-    const dots = document.querySelectorAll(".dot");
-    const prevBtn = $("prevTestimonial"); const nextBtn = $("nextTestimonial");
-    let cur = 0, len = cards.length, interval;
-    function showTestimonial(idx) {
-      cards.forEach(c => c.classList.remove("active")); dots.forEach(d => d.classList.remove("active"));
-      cards[idx].classList.add("active"); dots[idx].classList.add("active"); cur = idx;
-    }
-    function nextT() { showTestimonial((cur + 1) % len); }
-    function prevT() { showTestimonial((cur - 1 + len) % len); }
-    nextBtn.addEventListener("click", () => { nextT(); resetInterval(); });
-    prevBtn.addEventListener("click", () => { prevT(); resetInterval(); });
-    dots.forEach(d => d.addEventListener("click", () => { showTestimonial(+d.dataset.index); resetInterval(); }));
-    function startInt() { interval = setInterval(nextT, 4000); }
-    function resetInterval() { clearInterval(interval); startInt(); }
-    startInt();
-    const form = $("contactForm"); const success = $("formSuccess"); const submitBtn = $("submitBtn");
-    const fields = { name: { id: "name", err: "name-error" }, email: { id: "email", err: "email-error" }, message: { id: "message", err: "message-error" } };
-    function showErr(id, errId) { const i = $(id), e = $(errId); i.style.borderColor = "#ff6b6b"; i.style.boxShadow = "0 0 10px rgba(255,107,107,0.3)"; e.style.display = "block"; }
-    function hideErr(id, errId) { const i = $(id), e = $(errId); i.style.borderColor = ""; i.style.boxShadow = ""; e.style.display = "none"; }
-    Object.values(fields).forEach(({ id, err }) => {
-      const i = $(id);
-      i.addEventListener("input", () => hideErr(id, err));
-      i.addEventListener("focus", () => { i.style.borderColor = "var(--accent)"; i.style.boxShadow = "0 0 20px var(--accent-glow)"; });
-      i.addEventListener("blur", () => { i.style.borderColor = ""; i.style.boxShadow = ""; });
-    });
-    form.addEventListener("submit", e => {
-      e.preventDefault(); let valid = true;
-      Object.values(fields).forEach(({ id, err }) => { if (!$(id).value.trim()) { showErr(id, err); valid = false; } });
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("email").value.trim())) { showErr("email", "email-error"); valid = false; }
-      if (valid) {
-        const subject = $("subject").value;
-        const name = $("name").value.trim();
-        const email = $("email").value.trim();
-        const message = $("message").value.trim();
-        const body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
-        window.location.href = "mailto:" + C.personal.email +
-          "?subject=" + encodeURIComponent("Portfolio Contact: " + subject) +
-          "&body=" + encodeURIComponent(body);
-        submitBtn.textContent = "Opening Email...";
-        success.textContent = "Your email app is opening — just press send and I'll reply soon.";
-        success.style.display = "block";
-        setTimeout(() => { submitBtn.textContent = C.contact.formBtn; }, 2500);
-        setTimeout(() => { success.style.display = "none"; }, 8000);
-      }
     });
     const btt = $("backToTop");
     function backToTopVisibility() { btt.classList.toggle("show", window.scrollY > 400); }
