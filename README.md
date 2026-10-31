@@ -17,6 +17,8 @@ Salma-Portfolio/
     │   ├── profile.jpg        ← صورتك في أول الصفحة (Hero)
     │   ├── about.jpg          ← صورتك في قسم About Me
     │   ├── branding.jpg       ← بوستر "Salma Ehsan – Instructor"
+    │   ├── instructor.jpg     ← بوستر C++ Instructor
+    │   ├── logo.png           ← لوجو Rattebhali (براندنج)
     │   ├── burger1.jpg        ← NEW BURGER
     │   ├── burger2.jpg        ← HOT & FRESH BURGER
     │   ├── python1.jpg        ← Python Level 1
@@ -25,8 +27,7 @@ Salma-Portfolio/
     │   ├── scratch.jpg        ← Scratch Course for Kids
     │   ├── comingsoon.jpg     ← Coming Soon – Rattebhali
     │   ├── cpp1.jpg           ← Learn to Code C++
-    │   ├── cpp2.jpg           ← C++ Course – Chess
-    │   └── logo.png           ← لوجو Rattebhali
+    │   └── cpp2.jpg           ← C++ Course – Chess
     └── files/
         └── salma-ehsan-cv.pdf ← السيرة الذاتية
 ```
@@ -57,7 +58,7 @@ const PORTFOLIO_CONFIG = { ... };
 | الأرقام | `about.stats` | 50 / 30 / 5 / 15 ⚠️ عدّليها لو عايزة |
 | آراء العملاء | `testimonials.items` | محتوى تجريبي ⚠️ غيّريه |
 | الخدمات | `services.items` | ✅ |
-| الأعمال | `portfolio.items` | ✅ 10 أعمال بصورها |
+| الأعمال | `portfolio.items` | ✅ 12 عمل بصورها (Branding / Social Media) |
 | المهارات | `skills.items` | ✅ |
 
 > **مهم:** بعد أي تعديل اضغطي `Ctrl + S` للحفظ ثم `F5` في المتصفح للمعاينة.
