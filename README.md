@@ -26,7 +26,8 @@ Salma-Portfolio/
     │   ├── scratch.jpg        ← Scratch Course for Kids
     │   ├── comingsoon.jpg     ← Coming Soon – Rattebhali
     │   ├── cpp1.jpg           ← Learn to Code C++
-    │   └── cpp2.jpg           ← C++ Course
+    │   ├── cpp2.jpg           ← C++ Course
+    │   └── image.png          ← Python Course for Kids
     └── files/
         └── Salma_Ehsan_CV.pdf ← السيرة الذاتية
 ```
